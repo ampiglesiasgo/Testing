@@ -29,6 +29,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            brew install ruby
             echo "gem 'rspec'" >> Gemfile
             echo "gem 'faker'" >> Gemfile
             echo "source 'https://rubygems.org'" >> Gemfile
